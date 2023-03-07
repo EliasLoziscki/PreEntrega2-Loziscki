@@ -9,7 +9,15 @@
 
 body{
     background-color: black;
+    font-family: 'Roboto', sans-serif;
 }
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.2em;}
+ul{list-style: none;
+padding: 0;}
+a{text-decoration: none;}
 
 .idenea{color: rgba(40, 131, 40, 0.719);}
 .fit{color: rgba(238, 44, 44, 0.719);}
@@ -19,14 +27,17 @@ body{
     font-size: 25px;
     padding: 10px 15px;
 }
+
 .navbar-nav{
     align-items: start;
 
 }
+
 .nav-link{
     color: rgb(70, 65, 65);
     font-size: 25px;
 }
+
 .nav-link:hover{
     color: purple;
     text-decoration: underline;
@@ -35,197 +46,198 @@ body{
 /*finaliza navbar*/
 
 /*Hero*/
-.frase{
+.frase{   
+    text-align: center;
+    color: rgb(70, 65, 65);
+    padding: 20px; 
+    height: 70vh;
+    
+    background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)),
+    url(../recursos/imagenes/heroe-image.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-
-    height: 70vh;
-
-    text-align: center;
-    color: rgb(70, 65, 65);
-    padding: 20px;
-
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)),
-    url(../recursos/imagenes/heroe-image.jpg);
 }
+
 .frase h3{
     text-align: start;
 }
 
 
-/*comienzo section*/
-section {
-    background-color: rgba(85, 107, 47, 0.678);
-}
-article h2 {
-    padding: 35px 25px 8px 20px;
-    font-family: 'Heebo', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    font-size: 25px;
-    color: rgb(20, 40, 216);
-}
-article img{
-    border: 4px solid #000000;
-    margin: 20px;
-}
-article h3 {
-    padding: 35px 25px 25px 20px;
-    font-size: 25px;
-    font-family: 'Heebo', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    color: rgb(42, 63, 179);
-}
-article p {
-    padding: 20px;
-    font-size: 18px;
-    font-family: 'Heebo', sans-serif;
-    font-family: 'Roboto', sans-serif;
-}
-.img2k {
-    display: grid;
-    grid-template-columns: repeat(2 1fr);
-
+/*main*/
+.mainidea{
+    margin: 60px 0px;
 }
 
-.titulo-profe {
+.mainidea-cajas{
+    padding: 70px 10px;
     text-align: center;
-}
-.video-profe {
-    margin-left: 30%;
-    padding-bottom: 20px;
+    color: rgb(70, 65, 65);
 }
 
-/*finalizo section*/
 
-/*comienza footer*/
-
-.pie {
-    font-family: 'Heebo', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    background-color: black;
-    color: white;
-    padding-bottom: 30px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    
-}
-.pie h4 {
-    font-family: 'Heebo', sans-serif;
-    font-family: 'Roboto', sans-serif;
-        font-size: 24px;
-        margin-left: 20px;
-        padding: 16px 0px 8px 0px;
-}
-.pie p {
-    font-family: 'Heebo', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    margin-left: 20px;
-    padding: 2px 0px 5px 0px;
-}
-
-.sedes-pie{
-    font-family: 'Heebo', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    margin-left: 20px;
-    text-decoration: none;
-    color: aqua;
-}
-
-.img-face{
-    margin-left: 20px;
-}
-/*fin footer*/
-
-/*flexbox*/
-/*
-.flex-conteiner {
-    font-family: 'Heebo', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    color: #000000;
-    border: 1px solid red;
-    background-color: azure;
+/*seccion planes*/
+.plan h2{
     padding: 10px;
-    margin: 20px;
-    
-    /*propiedades de la caja
-    /*activamos flexBox
+    color:  rgba(235, 0, 0, 0.795);
+}
+
+.planes{
+    display: flex;
+    justify-content: center;
+}
+
+.plan{
     display: flex;
     flex-direction: column;
-    /*difine el sim desbordan o no las cajas
-    flex-wrap: nowrap;
 
-    justify-content: center;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,1),
+        rgba(0,0,0,0.8)),
+    url(../recursos/imagenes/plan.jpg);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
     
+    height: 500px;
+    max-width: 700px;
+
+    margin: 10px 10px 50px;
+    text-align: center;
+    padding: 10px;
+}
+.plan_tiempo{
+    display: flex;
+    justify-content: space-around;
+}
+
+.button{
+    margin: 20px;
+    
+}
+.btn-outline-danger{
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/*seccion profe, iframe youtube*/
+.profe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 
-    align-content: flex-end;
-
-
-}
-.flex-conteiner img {
-    width: 400px;
-    height: 350px;
-}
-
-.caja1 {
-    width: 100%;
-    height: 75px;
-    border: 1px solid green;
-    margin: 5px;
-    font-size: 40px;
-
     text-align: center;
-    font-weight: bold;
-
-
-    
+    color: rgb(70, 65, 65);
 }
-.caja2 {
-    width: 100%;
-    height: 450px;
-    border: 1px solid green;
-    margin: 5px;
 
-    text-align: center;
-    font-weight: bold;
+.profe h2{
+    padding: 30px 0px 20px 0px;
+    margin: auto;
+}
+
+.video-profe{
+    width: 390px;
+    height: 300px;
+}
+
+
+/*seccion preguntas frecuentes*/
+.preguntas-frecuentes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+    margin-top: 40px;
+}
+.accordion{
+    max-width: 600px;
+}
+
+
+/*footer con gridd*/
+footer .caja-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    margin-top: 40px;
+    color: rgb(70, 65, 65);
+    border-top: 3px rgb(49, 53, 53) solid;
+}
+
+.cajitas-footer{
+    margin: 10px;
+    padding: 10px;
 
     display: flex;
     flex-direction: column;
-    align-items: end;
-
-
+    align-items: start;
 }
-.caja3 {
-    width: 100%;
-    height: 450px;
-    border: 1px solid green;
-    margin: 5px;
 
-    text-align: center;
-    font-weight: bold;
-    align-items: flex-start;
-
+.cajitas-footer li{
+    font-size: 1.4em;
 }
-.caja4 {
-    width: 100%;
-    height: 450px;
-    border: 1px solid green;
-    margin: 5px;
 
-    text-align: center;
-    font-weight: bold;
-
-}
-*/
-/*mediaQueries*/
-@media screen and (max-width: 480px) {
+.redes{
+    padding-top: 15px;
     
 }
 
+.caja__redes{
+    width: 40px;
+    height: 40px;
+}
+
+
+/*mediaQueries*/
+@media screen and (min-width: 576px){    
+    .video-profe{
+        width: 560px;
+        height: 315px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    footer .caja-footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .nav-link{
+        font-size: 30px;
+    }
+    .navbar-nav{
+        align-items: start;
+    }
+
+    .video-profe{
+        width: 700px;
+        height: 394px;
+    }
+    }
+
+@media screen and (max-width: 992px) {
+    .navbar-nav{
+        align-items: end;}
+}
+
+@media screen and (min-width: 1200px){
+    h1{font-size: 5.5em;}
+    h2{font-size: 3.2em;}
+    h3{font-size: 2.8em;}
+    p{font-size: 2em;}
+    .nav-link{
+        font-size: 35px;
+    }
+
+}
 
 
