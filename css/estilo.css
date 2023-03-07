@@ -5,77 +5,57 @@
 *{
     margin: 0px;
     padding: 0px;
-
 }
-/*comienza nav*/
-.navbar {
+
+body{
     background-color: black;
-    color: white;
-    font-size: 30px;
-    height: 100px;
-    margin-bottom: 1px;
-
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    
-}
-.navbar-list {
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    list-style-type: none;
-}
-.navbar-list__link {
-    text-decoration: none;
-    font-family: 'Heebo', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    color: blueviolet;
-    margin: 20px;
-    /*
-    border: 5px solid rgba(137, 43, 226, 0.445);*/
 }
 
+.idenea{color: rgba(40, 131, 40, 0.719);}
+.fit{color: rgba(238, 44, 44, 0.719);}
 
-a:hover {
-
-    background-color: red;
-    color: white;
-    border-radius: 5px;
-    
+/*comienza navbar*/
+.navbar{
+    font-size: 25px;
+    padding: 10px 15px;
+}
+.navbar-nav{
+    align-items: start;
 
 }
+.nav-link{
+    color: rgb(70, 65, 65);
+    font-size: 25px;
+}
+.nav-link:hover{
+    color: purple;
+    text-decoration: underline;
+    text-decoration-color: purple;
+}
+/*finaliza navbar*/
 
-/*finaliza nav*/
-
-/*comienza header*/
-.estilo-header {
-    background-image: url("../Recursos/Imagenes/prin_Gimnasio.jpg");
+/*Hero*/
+.frase{
+    background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100%;
-    height: 650px;
-}
-h1{
-    font-family: 'Heebo', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    font-size: 80px;
-    font-weight: bold;
-    color: rgba(21, 177, 21, 0.80);
-    text-align: center;
-}
-.estilo-header p {
-    margin-left: 30px;
-    margin-top: 80px;
-    font-size: 40px;
-    font-weight: 900;
-    color: rgba(197, 64, 175, 0.87);
 
+    height: 70vh;
+
+    text-align: center;
+    color: rgb(70, 65, 65);
+    padding: 20px;
+
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)),
+    url(../recursos/imagenes/heroe-image.jpg);
 }
-/*finaliza header*/
+.frase h3{
+    text-align: start;
+}
+
 
 /*comienzo section*/
 section {
@@ -122,9 +102,6 @@ article p {
 /*finalizo section*/
 
 /*comienza footer*/
-div{
-    border: white 2px solid;
-}
 
 .pie {
     font-family: 'Heebo', sans-serif;
