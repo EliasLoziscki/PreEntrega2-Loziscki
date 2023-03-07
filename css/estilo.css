@@ -194,6 +194,16 @@ footer .caja-footer {
 }
 
 
+/*opiniones*/
+.opiniones-titulos{
+    padding-top: 50px;
+}
+
+.container{
+    padding: 50px 30px;
+}
+
+
 /*mediaQueries*/
 @media screen and (min-width: 576px){    
     .video-profe{
@@ -222,11 +232,15 @@ footer .caja-footer {
         width: 700px;
         height: 394px;
     }
+    .container{
+        max-width: 75%;
+    }
     }
 
 @media screen and (max-width: 992px) {
     .navbar-nav{
-        align-items: end;}
+        align-items: end;
+}
 }
 
 @media screen and (min-width: 1200px){
