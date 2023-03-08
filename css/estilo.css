@@ -1,6 +1,9 @@
 /*Fuente*/
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@600&family=Roboto&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto&display=swap');
+/*
+font-family: 'Dancing Script', cursive;
+font-family: 'Roboto', sans-serif;
+*/
 
 *{
     margin: 0px;
@@ -10,6 +13,7 @@
 body{
     background-color: black;
     font-family: 'Roboto', sans-serif;
+    color: rgb(70, 65, 65);
 }
 h1{font-size: 3.5em;}
 h2{font-size: 2.7em;}
@@ -19,7 +23,7 @@ ul{list-style: none;
 padding: 0;}
 a{text-decoration: none;}
 
-.idenea{color: rgba(40, 131, 40, 0.719);}
+.idenea{color: rgba(51, 216, 51, 0.89);}
 .fit{color: rgba(238, 44, 44, 0.719);}
 
 /*comienza navbar*/
@@ -48,7 +52,7 @@ a{text-decoration: none;}
 /*Hero*/
 .frase{   
     text-align: center;
-    color: rgb(70, 65, 65);
+    text-shadow: 5px 2px 3px rgb(56, 67, 167);
     padding: 20px; 
     height: 70vh;
     
@@ -63,7 +67,9 @@ a{text-decoration: none;}
 }
 
 .frase h3{
+    color: rgb(133, 130, 130);
     text-align: start;
+    text-shadow: none;
 }
 
 
@@ -80,9 +86,10 @@ a{text-decoration: none;}
 
 
 /*seccion planes*/
-.plan h2{
+.planes h2{
     padding: 10px;
     color:  rgba(235, 0, 0, 0.795);
+    text-shadow: 2px 2px 3px rgb(153, 9, 9);
 }
 
 .planes{
@@ -117,14 +124,15 @@ a{text-decoration: none;}
 
 .button{
     margin: 20px;
-    
 }
+
 .btn-outline-danger{
     font-weight: bold;
     font-size: 1rem;
+    box-shadow: 1px 1px 3px;
 }
 
-/*seccion profe, iframe youtube*/
+/*seccion profe, iframe youtube, flexbox*/
 .profe{
     display: flex;
     flex-direction: column;
@@ -200,7 +208,16 @@ footer .caja-footer {
 }
 
 .container{
-    padding: 50px 30px;
+    padding: 50px 20px;
+}
+
+.card{
+    margin: 20px;
+    box-shadow: 5px 5px 10px;
+}
+
+.card-text{
+    font-family: 'Dancing Script', cursive;
 }
 
 
@@ -244,14 +261,19 @@ footer .caja-footer {
 }
 
 @media screen and (min-width: 1200px){
-    h1{font-size: 5.5em;}
+    h1{font-size: 4.5em;}
     h2{font-size: 3.2em;}
     h3{font-size: 2.8em;}
-    p{font-size: 2em;}
+    p{font-size: 2em;
+}
     .nav-link{
-        font-size: 35px;
-    }
+        font-size: 28px;
+}
 
+    .btn-outline-danger{
+        font-size: 1.5rem;
+    
+}
 }
 
 
