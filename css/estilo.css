@@ -157,6 +157,7 @@ a{text-decoration: none;}
 /*seccion preguntas frecuentes*/
 .preguntas-frecuentes{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
@@ -204,7 +205,8 @@ footer .caja-footer {
 
 /*opiniones*/
 .opiniones-titulos{
-    padding-top: 50px;
+    text-align: center;
+    padding: 70px;
 }
 
 .container{
@@ -218,6 +220,41 @@ footer .caja-footer {
 
 .card-text{
     font-family: 'Dancing Script', cursive;
+}
+
+/*registrarse*/
+.registro{
+    padding: 15px 2px 10px 2px;
+}
+
+.labelkyinputk{
+    padding-top: 13px;
+    font-size: 1.5rem;
+}
+
+.enviar-reset{
+    padding: 50px 0px;
+}
+
+.inputk{
+    font-size: 1.2rem;
+}
+
+
+/*nuestra-vision*/
+.nuestra-vi{
+    font-weight: bold;
+    padding: 50px 80px;
+    
+}
+
+.nuestra-imagen{
+    background-image: url(../recursos/imagenes/vision.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: auto;
+    width: 300px;
+    height: 160px;
 }
 
 

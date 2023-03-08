@@ -51,33 +51,53 @@
     </header>
     
     <main>
-        <h2>Registrate</h2>
-        <p>Un asesor se pondra en contacto</p>
+        <div class="container text-center registrate">
+            <h2>Registrate</h2>
+            <p>Un asesor se pondra en contacto</p>
+        </div>
     </main>
 
     <form action="" method="get">
-        <p>
-            <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" placeholder="Ingrese su nombre">
-        </p>
-        <p>
-            <label for="apellido">Apellido</label>
-            <input type="text" name="apellido" placeholder="Ingrese su apellido">
-        </p>
-        <p>
-            <label for="email">Ingrese su correo electronico</label>
-            <input type="email" name="email" placeholder="Ejemplo@email.com">
-        </p>
-        <p>
-            <label for="telefono">Telefono</label>
-            <input type="tel" name="telefono" placeholder="Ingrese su número">
-        </p>
-
-        <button type="submit">Enviar</button>
-        <button type="reset">Resetear</button>
-    
+        <div class="container registro">
+            <div class="row justify-content-start labelkyinputk">
+                <div class="col-3">
+                    <label class="labelk" for="nombre">Nombre:</label>
+                </div>
+                <div class="col-3">
+                    <input class="inputk" type="text" name="nombre" placeholder="Ingrese su nombre">
+                </div>
+            </div>
+            <div class="row justify-content-start labelkyinputk">
+                <div class="col-3">
+                    <label class="labelk" for="apellido">Apellido:</label>
+                </div>
+                <div class="col-3">
+                    <input class="inputk" type="text" name="apellido" placeholder="Ingrese su apellido">
+                </div>
+            </div>
+            <div class="row justify-content-start labelkyinputk">
+                <div class="col-3">
+                    <label class="labelk" for="email">Email:</label>
+                </div>
+                <div class="col-3">
+                    <input class="inputk" type="email" name="email" placeholder="Ejemplo@email.com">
+                </div>
+            </div>
+            <div class="row justify-content-start labelkyinputk">
+                <div class="col-3">
+                    <label class="labelk" for="telefono">Telefono:</label>
+                </div>
+                <div class="col-3">
+                    <input class="inputk" type="tel" name="telefono" placeholder="Ingrese su número">
+                </div>
+            </div>
+            <div class="enviar-reset">
+                <button class="btn btn-primary" type="submit">Enviar</button>
+                <input class="btn btn-danger" type="reset" value="Reset">
+            </div>
+        </div>
     </form>
-
+    
 
 <!--seccion planes-->
     <section>
@@ -105,8 +125,10 @@
 
 <!--seccion preguntas frecuentes bootstrap-->
     <section class="preguntas-frecuentes">
+        <div>
+            <h3>Preguntas frecuentes</h3>
+        </div>
         <div class="accordion">
-
             <div class="accordion-item bg-black">
                 <h2 class="accordion-header  bg-black">
                     <button class="accordion-button collapsed  bg-black fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseone" aria-expanded="false" aria-controls="collapseThree">
